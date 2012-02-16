@@ -1,0 +1,3 @@
+[submodule "janus/vim-racket"]
+	path = janus/vim-racket
+	url = git://github.com/patrickboe/vim-racket.git
