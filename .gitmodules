@@ -3,4 +3,4 @@
 	url = git://github.com/patrickboe/vim-racket.git
 [submodule "vim"]
 	path = vim
-	url = git://github.com/carlhuda/janus.git
+	url = https://github.com/carlhuda/janus.git
