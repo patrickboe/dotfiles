@@ -66,4 +66,5 @@
  (plt:framework-pref:drracket:unit-window-height 1026)
  (plt:framework-pref:drracket:unit-window-max? #f)
  (plt:framework-pref:drracket:frame:initial-position #f)
+ (readline-input-history (#"(exit)" #"yes" #",install!"))
 )
