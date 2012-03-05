@@ -4,3 +4,6 @@
 [submodule "vim"]
 	path = vim
 	url = https://github.com/carlhuda/janus.git
+[submodule "janus/vimerl"]
+	path = janus/vimerl
+	url = https://github.com/oscarh/vimerl.git
