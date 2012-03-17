@@ -10,3 +10,6 @@
 [submodule "janus/rainbow_parentheses"]
 	path = janus/rainbow_parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "janus/vim-racket"]
+	path = janus/vim-racket
+	url = https://github.com/wlangstroth/vim-racket.git
