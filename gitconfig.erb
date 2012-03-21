@@ -1,6 +1,6 @@
 [user]
-	name = Patrick Boe
-	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+  name = Patrick Boe
+  email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
 [alias]
   st = status
   ci = commit
@@ -12,10 +12,16 @@
 [color]
   ui = true
 [core]
-	excludesfile = <%= ENV['HOME'] %>/.gitignore
-	editor = vim
-	autocrlf = input
+  excludesfile = <%= ENV['HOME'] %>/.gitignore
+  editor = vim
+  autocrlf = input
 [apply]
-	whitespace = nowarn
+  whitespace = nowarn
 [format]
-	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[diff]
+  tool = vimdiff
+[difftool "mvimdiff"]
+  cmd = "mvimdiff -diff  "
+[difftool]
+  prompt = false
