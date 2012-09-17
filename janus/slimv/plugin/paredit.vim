@@ -73,7 +73,7 @@ function! PareditInitBuffer()
     " Make sure to include special characters in 'iskeyword'
     " in case they are accidentally removed
     " Also define regular expressions to identify special characters used by paredit
-    if &ft == 'clojure'
+    if &ft == 'clojure' || &ft == 'racket'
         setlocal iskeyword+=+,-,*,/,%,<,=,>,:,$,?,!,@-@,94,~,#,\|,&
         let b:any_matched_char   = '(\|)\|\[\|\]\|{\|}\|\"'
         let b:any_matched_pair   = '()\|\[\]\|{}\|\"\"'
@@ -126,7 +126,7 @@ function! PareditInitBuffer()
         execute 'vnoremap <buffer> <silent> ' . g:paredit_leader.'w(  :<C-U>call PareditWrapSelection("(",")")<CR>'
         execute 'nnoremap <buffer> <silent> ' . g:paredit_leader.'w"  :<C-U>call PareditWrap('."'".'"'."','".'"'."')<CR>"
         execute 'vnoremap <buffer> <silent> ' . g:paredit_leader.'w"  :<C-U>call PareditWrapSelection('."'".'"'."','".'"'."')<CR>"
-        if &ft == 'clojure'
+        if &ft == 'clojure' || &ft == 'racket'
             inoremap <buffer> <expr>   [            PareditInsertOpening('[',']')
             inoremap <buffer> <expr>   ]            PareditInsertClosing('[',']')
             inoremap <buffer> <expr>   {            PareditInsertOpening('{','}')
@@ -185,7 +185,7 @@ function! PareditInitBuffer()
         silent! unmap  <buffer> c
         silent! unmap  <buffer> dd
         silent! unmap  <buffer> cc
-        if &ft == 'clojure'
+        if &ft == 'clojure' || &ft == 'racket'
             silent! iunmap <buffer> [
             silent! iunmap <buffer> ]
             silent! iunmap <buffer> {
@@ -397,7 +397,7 @@ function! s:IsBalanced()
         return 0
     endif
 
-    if &ft == 'clojure'
+    if &ft == 'clojure' || &ft == 'racket'
         let b1 = searchpair( '\[', '', '\]', 'brnmW', s:skip_sc, matchb )
         let b2 = searchpair( '\[', '', '\]',  'rnmW', s:skip_sc, matchf )
         if !(b1 == b2) && !(b1 == b2 - 1 && line[c-1] == '[') && !(b1 == b2 + 1 && line[c-1] == ']')
@@ -460,7 +460,7 @@ function! s:Unbalanced( matched )
     while 1
         let matched = tmp
         let tmp = substitute( tmp, '(\(\s*\))',   ' \1 ', 'g')
-        if &ft == 'clojure'
+        if &ft == 'clojure' || &ft == 'racket'
             let tmp = substitute( tmp, '\[\(\s*\)\]', ' \1 ', 'g')
             let tmp = substitute( tmp, '{\(\s*\)}',   ' \1 ', 'g')
         endif
@@ -468,7 +468,7 @@ function! s:Unbalanced( matched )
         if tmp == matched
             " All paired chars eliminated
             let tmp = substitute( tmp, ')\(\s*\)(',   ' \1 ', 'g')
-            if &ft == 'clojure'
+            if &ft == 'clojure' || &ft == 'racket'
                 let tmp = substitute( tmp, '\]\(\s*\)\[', ' \1 ', 'g')
                 let tmp = substitute( tmp, '}\(\s*\){',   ' \1 ', 'g')
             endif
@@ -1184,7 +1184,7 @@ function! s:FindClosing()
     endif
     call setpos( '.', [0, l, c, 0] )
 
-    if &ft == 'clojure'
+    if &ft == 'clojure' || &ft == 'racket'
         call PareditFindClosing( '[', ']', 0 )
         let lp = line( '.' )
         let cp = col( '.' )
