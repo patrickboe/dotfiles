@@ -12,4 +12,4 @@
 	url = https://github.com/kien/rainbow_parentheses.vim
 [submodule "janus/vim-racket"]
 	path = janus/vim-racket
-	url = git://github.com/wlangstroth/vim-racket.git
+	url = git://github.com/patrickboe/vim-racket.git
