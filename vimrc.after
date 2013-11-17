@@ -1,5 +1,4 @@
+colorscheme kolor
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadSquare
-set background=dark
-colorscheme solarized
 set wrap
