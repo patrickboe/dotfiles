@@ -15,5 +15,3 @@ let g:rbpt_colorpairs = [
     \ ['darkred',     'DarkOrchid3'],
     \ ['red',         'firebrick3'],
     \ ]
-
-let g:rbpt_max = 14
