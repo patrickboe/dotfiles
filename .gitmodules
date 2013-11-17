@@ -10,3 +10,6 @@
 [submodule "janus/vim-racket"]
 	path = janus/vim-racket
 	url = git://github.com/patrickboe/vim-racket.git
+[submodule "janus/vim-kolor"]
+	path = janus/vim-kolor
+	url = https://github.com/zeis/vim-kolor.git

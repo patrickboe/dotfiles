@@ -1,4 +1,6 @@
 escape ^]a
+bind j focus down
+bind k focus up
 
 bell_msg '^GBell in window %n'
 
@@ -8,7 +10,8 @@ shell -/bin/bash
 
 screen -t editor
 screen -t shell
-screen -t other
+screen -t repl
+screen -t browse
 select 1
 select 0
 
