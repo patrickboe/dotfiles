@@ -13,3 +13,6 @@
 [submodule "janus/vim-niji"]
 	path = janus/vim-niji
 	url = git://github.com/amdt/vim-niji.git
+[submodule "janus/vim-distinguished"]
+	path = janus/vim-distinguished
+	url = https://github.com/Lokaltog/vim-distinguished.git
