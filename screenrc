@@ -15,9 +15,10 @@ attrcolor b ".I"
 # Erase background with current bg color
 defbce on
 
-screen -t editor
+screen -t edit
 screen -t shell
 screen -t repl
 screen -t browse
+screen -t irc
 select 1
 select 0
