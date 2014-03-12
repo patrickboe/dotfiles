@@ -10,3 +10,9 @@
 [submodule "janus/vim-distinguished"]
 	path = janus/vim-distinguished
 	url = https://github.com/Lokaltog/vim-distinguished.git
+[submodule "janus/vim-niji"]
+	path = janus/vim-niji
+	url = https://github.com/amdt/vim-niji.git
+[submodule "janus/vim-racket"]
+	path = janus/vim-racket
+	url = https://github.com/patrickboe/vim-racket.git
