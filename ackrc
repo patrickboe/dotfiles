@@ -1,2 +1,5 @@
---type-add
-lisp=.rkt
+--type-add=lisp=.rkt
+--type-add=haskell=.hs
+--type-set=shakespeare=.hamlet,.julius
+--ignore-dir=.cabal-sandbox
+--ignore-dir=dist
