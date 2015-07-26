@@ -1,21 +1,31 @@
 [submodule "janus/vimerl"]
 	path = janus/vimerl
 	url = https://github.com/oscarh/vimerl.git
+  ignore = dirty
 [submodule "janus/vim-colors-solarized"]
 	path = janus/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+  ignore = dirty
 [submodule "janus/vim-kolor"]
 	path = janus/vim-kolor
 	url = https://github.com/zeis/vim-kolor.git
+  ignore = dirty
 [submodule "janus/vim-distinguished"]
 	path = janus/vim-distinguished
 	url = https://github.com/Lokaltog/vim-distinguished.git
+  ignore = dirty
 [submodule "janus/vim-niji"]
 	path = janus/vim-niji
 	url = https://github.com/amdt/vim-niji.git
+  ignore = dirty
 [submodule "janus/vim-racket"]
 	path = janus/vim-racket
 	url = https://github.com/patrickboe/vim-racket.git
+  ignore = dirty
 [submodule "janus/slimv"]
 	path = janus/slimv
 	url = https://github.com/kovisoft/slimv.git
+  ignore = dirty
+[submodule "janus/vim-fireplace"]
+	path = janus/vim-fireplace
+	url = git@github.com:tpope/vim-fireplace.git
