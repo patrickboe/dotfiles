@@ -30,3 +30,6 @@
 	path = janus/vim-fireplace
 	url = git@github.com:tpope/vim-fireplace.git
   ignore = dirty
+[submodule "janus/vim-redl"]
+	path = janus/vim-redl
+	url = git@github.com:dgrnbrg/vim-redl.git
